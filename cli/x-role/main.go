@@ -5,8 +5,8 @@ import (
 	"log"
 )
 
-func main(){
-	if err := xrole.Assume(); err != nil {
+func main() {
+	if err := xrole.Run(); err != nil {
 		log.Fatal(err)
 	}
 }

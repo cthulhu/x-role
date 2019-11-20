@@ -21,13 +21,6 @@ func (f *FileCacheProvider) IsExpired() bool {
 	return f.Creds.IsExpired()
 }
 
-func Assume() error {
-	sess := session.Must(session.NewSession())
+func Run() error {
 
-	// Inject cache able credential provider on top of the SDK's credentials loader
-	sess.Config.Credentials = credentials.NewCredentials(&FileCacheProvider{
-		Creds: sess.Config.Credentials,
-	})
-	fmt.Println(sess.Config.Credentials)
-	return nil
 }
