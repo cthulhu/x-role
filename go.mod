@@ -2,4 +2,4 @@ module github.com/cthulhu/x-role
 
 go 1.12
 
-require github.com/aws/aws-sdk-go v1.19.23
+require github.com/aws/aws-sdk-go v1.33.0
